@@ -1,0 +1,221 @@
+/* ================= RESET ================= */
+/* ===== DESKTOP ENHANCEMENT ===== */
+@media (min-width: 1024px) {
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+  
+    section {
+      padding: 80px 40px;
+    }
+  
+    .card {
+      padding: 50px 60px;
+      transition: 0.4s ease;
+    }
+  
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+    }
+  
+  }
+  @media (min-width: 1024px) {
+
+    .doa-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+    }
+  
+    .arabic {
+      flex: 1;
+      font-size: 32px;
+      text-align: right;
+    }
+  
+    .translation {
+      flex: 1;
+    }
+  
+  }
+  @media (min-width: 1024px) {
+
+    .hero {
+      padding: 100px 20px 70px;
+      position: relative;
+    }
+  
+    .hero::after {
+      content: "";
+      width: 120px;
+      height: 3px;
+      background: #C6A75E;
+      display: block;
+      margin: 25px auto 0;
+      border-radius: 5px;
+    }
+  
+    .hero h1 {
+      font-size: 48px;
+    }
+  
+  }
+  body {
+    background: #F8F6F0;
+    background-image: radial-gradient(
+      rgba(15, 61, 46, 0.03) 1px,
+      transparent 1px
+    );
+    background-size: 40px 40px;
+  }
+  @media (min-width: 1024px) {
+
+    h2 {
+      font-size: 28px;
+    }
+  
+    .latin {
+      font-size: 18px;
+    }
+  
+    .translation {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+  
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background: #f7faf8;
+    color: #2d3a2f;
+    line-height: 1.8;
+  }
+  
+  /* ================= HERO ================= */
+  .hero {
+    background: #0F3D2E;
+    text-align: center;
+    padding: 80px 20px 60px;
+  }
+  
+  .hero h1 {
+    font-size: 2.7rem;
+    color: #F8F6F0;
+    font-weight: 600;
+  }
+  
+  .hero p {
+    color: #777;
+  }
+  
+  /* ================= MAIN ================= */
+  main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    gap: 35px;
+  }
+  
+  /* ================= CARD ================= */
+  .card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow:
+      0 15px 35px rgba(0,0,0,0.05);
+    transition: 0.35s ease;
+    position: relative;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  /* Accent Colors */
+  .sahur { border-top: 6px solid #2e8b57; }
+  .buka  { border-top: 6px solid #d4a017; }
+  .meal  { border-top: 6px solid #1B5E4B }
+  
+  /* ================= TITLES ================= */
+  h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    font-weight: 600;
+    color: #1f7a63;
+  }
+  
+  /* subtle divider */
+  h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e6efe9;
+    margin: 10px auto 0;
+    border-radius: 10px;
+  }
+  
+  /* ================= TEXT ================= */
+  .arabic {
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 18px;
+    color: #183d2a;
+  }
+  
+  .latin {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .translation {
+    background: #f3f7f5;
+    padding: 16px;
+    border-radius: 14px;
+  }
+  
+  /* ================= NOTE ================= */
+  .note {
+    margin-top: 15px;
+    background: #edf5f1;
+    padding: 14px;
+    border-radius: 10px;
+    border-left: 4px solid #2e8b57;
+    font-size: 0.95rem;
+  }
+  
+  /* ================= FOOTER ================= */
+  footer {
+    color: #EAF4EF;
+    text-align: center;
+    padding: 45px 20px;
+    background: #0F3D2E;
+  }
+  
+  /* ================= RESPONSIVE ================= */
+  @media (max-width: 768px) {
+  
+    .hero {
+      padding: 55px 15px;
+    }
+  
+    .card {
+      padding: 25px;
+    }
+  
+    .arabic {
+      font-size: 1.45rem;
+    }
+  }
