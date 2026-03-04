@@ -1,0 +1,240 @@
+/* ======================
+   GLOBAL
+====================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f9f6;
+    color: #2f3e34;
+}
+
+
+/* ======================
+   HEADER
+====================== */
+
+.hero {
+    background: #5f8f73;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.hero p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+
+/* ======================
+   DZIKIR SECTION
+====================== */
+
+.dzikir-section {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+}
+
+
+/* ======================
+   BACKGROUND LAYER
+====================== */
+
+.background-layer {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+
+    border-radius: 30px;
+
+    background-image: url("assets/image/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+
+
+/* ======================
+   CARD
+====================== */
+
+.dzikir-card {
+    position: relative;
+    z-index: 2;
+
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+
+    width: 100%;
+    max-width: 420px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+.dzikir-card h2 {
+    margin-bottom: 20px;
+}
+
+
+/* ======================
+   COUNTER
+====================== */
+
+.counter-number {
+    font-size: 4rem;
+    font-weight: 600;
+    color: #4f7c63;
+    margin: 20px 0;
+}
+
+
+/* ======================
+   TARGET
+====================== */
+
+.target-box {
+    margin-bottom: 20px;
+}
+
+.target-box select {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #cfded4;
+    font-family: Poppins;
+}
+
+
+/* ======================
+   PROGRESS BAR
+====================== */
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background: #e6efe9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #6da787;
+    transition: 0.3s;
+}
+
+
+/* ======================
+   BUTTONS
+====================== */
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: Poppins;
+    transition: 0.2s;
+}
+
+.add-btn {
+    background: #5f8f73;
+    color: white;
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.reset-btn {
+    background: #e7efe9;
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+/* hover */
+.add-btn:hover {
+    transform: scale(1.08);
+}
+
+.reset-btn:hover {
+    background: #d7e5dc;
+}
+
+/* click animation */
+button:active {
+    transform: scale(0.92);
+}
+
+
+/* ======================
+   BADGE
+====================== */
+
+.badge {
+    margin-top: 20px;
+    background: #e2f3e8;
+    color: #2e6b4f;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+
+/* ======================
+   FOOTER
+====================== */
+
+.footer {
+    background: #5f8f73;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ======================
+   RESPONSIVE
+====================== */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .dzikir-card {
+        padding: 30px 20px;
+    }
+
+    .counter-number {
+        font-size: 3rem;
+    }
+
+}

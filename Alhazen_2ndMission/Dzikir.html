@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dzikir Counter</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="hero">
+    <h1>Dzikir Counter</h1>
+    <p>Count your daily remembrance peacefully</p>
+</header>
+
+<main>
+
+<section class="dzikir-section">
+
+    <!-- Background Layer -->
+    <div class="background-layer"></div>
+
+    <!-- Card -->
+    <div class="dzikir-card">
+
+        <h2>Daily Dzikir</h2>
+
+        <div id="counter" class="counter-number">0</div>
+
+        <div class="target-box">
+            <label>Target :</label>
+
+            <select id="targetSelect">
+                <option value="33">33</option>
+                <option value="99">99</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+
+        <div class="progress-container">
+            <div id="progressBar" class="progress-bar"></div>
+        </div>
+
+        <div class="button-group">
+            <button id="addBtn" class="add-btn">+</button>
+            <button id="resetBtn" class="reset-btn">Reset</button>
+        </div>
+
+        <div id="badge" class="badge">
+            ✅ Target Achieved!
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+<p>© 2026 Ramadhan Dzikir • Keep remembering Allah Everyone 🌙</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
