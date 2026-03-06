@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZakaCount</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>ZakaCount</h1>
+</header>
+
+<main>
+
+<div class="container">
+
+<h2>Hitung Zakat</h2>
+
+<label>Jenis Zakat</label>
+<select id="jenisZakat">
+<option value="penghasilan">Zakat Penghasilan</option>
+<option value="emas">Zakat Emas</option>
+</select>
+
+<label>Harga Emas / gram</label>
+<input type="number" id="hargaEmas" placeholder="Contoh: 1200000">
+
+<div id="formPenghasilan">
+
+<label>Gaji</label>
+<input type="number" id="gaji" placeholder="Masukkan gaji">
+
+<label>Penghasilan Lain</label>
+<input type="number" id="lain" placeholder="Masukkan penghasilan lain">
+
+</div>
+
+<div id="formEmas" style="display:none;">
+
+<label>Total Emas (gram)</label>
+<input type="number" id="emas" placeholder="Masukkan jumlah emas">
+
+</div>
+
+<button onclick="hitungZakat()">Hitung Zakat</button>
+
+<div class="result" id="hasil">
+
+<p><b>Total Harta :</b> <span id="total"></span></p>
+<p><b>Nisab :</b> <span id="nisab"></span></p>
+<p><b>Status :</b> <span id="status"></span></p>
+<p><b>Zakat :</b> <span id="zakat"></span></p>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+<p>© Kalkulator Zakat</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
