@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramadhan Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Worship Tracker</h1>
+    </header>
+    
+    <main class="main-container">
+        <section class="card-summary">
+            <h3>Progress Hari Ini</h3>
+            <div class="progress-bar">
+                <div id="mainFill" class="fill"></div>
+            </div>
+            <div class="status-row">
+                <span id="percent">0%</span>
+                <p id="quote">Mulai ibadah hari ini ✨</p>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <section class="card">
+                <h3>Shalat Wajib</h3>
+                <div class="list">
+                    <label>Subuh <input type="checkbox" class="sh-input"></label>
+                    <label>Dzuhur <input type="checkbox" class="sh-input"></label>
+                    <label>Ashar <input type="checkbox" class="sh-input"></label>
+                    <label>Maghrib <input type="checkbox" class="sh-input"></label>
+                    <label>Isya <input type="checkbox" class="sh-input"></label>
+                </div>
+                <button onclick="saveShalat()">Simpan</button>
+            </section>
+
+            <section class="card">
+                <h3>Baca Qur'an</h3>
+                <div class="form">
+                    <label>Target Halaman</label>
+                    <input type="number" id="targetQ" placeholder="0">
+                    <label>Halaman Dibaca</label>
+                    <input type="number" id="doneQ" placeholder="0">
+                </div>
+                <button onclick="saveQuran()">Simpan</button>
+            </section>
+
+            <section class="card">
+                <h3>Puasa Ramadhan</h3>
+                <div id="puasaGrid" class="calendar"></div>
+                <p id="puasaText">Puasa 0 dari 30 hari</p>
+            </section>
+        </div>
+
+        <footer>© Ramadhan Tracker</footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

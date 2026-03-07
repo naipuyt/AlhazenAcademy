@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    
+    /* INI KUNCINYA */
+    display: flex;
+    flex-direction: column; /* Biar Title di atas, Card di bawah */
+    align-items: center;    /* Biar semua rata tengah secara horizontal */
+    justify-content: center; /* Biar semua rata tengah secara vertikal */
+    
+    background-image: url('assets/background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header h1 {
+    color: white;
+    font-size: 3rem; /* Sesuaikan ukuran judul */
+    font-weight: 700;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7); /* Biar teks putih tetap terbaca jelas */
+    margin: 0;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 900px;       /* Biar gak melar banget di monitor gede */
+    background: rgba(35, 45, 54, 0.95);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+.main-container {
+    width: 95%;
+    max-width: 1000px;
+    background: rgba(31, 41, 55, 0.95); /* Warna navy tua transparan */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* Card Summary Putih */
+.card-summary {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 15px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.fill {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 100%);
+    transition: 0.6s ease;
+}
+
+.status-row { display: flex; align-items: center; gap: 15px; }
+#percent { font-weight: 600; font-size: 1.2rem; }
+
+/* Grid Content */
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+h3 { font-size: 16px; color: #333; margin-bottom: 12px; }
+
+/* Checklist & Form */
+.list label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #5b7c6a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Calendar */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.day {
+    aspect-ratio: 1;
+    background: #eee;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.day.active { background: #5b7c6a; color: white; }
+
+footer {
+    text-align: center;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .content-grid { grid-template-columns: 1fr; }
+}
