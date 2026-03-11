@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jadwal Imsakiyah Ramadhan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🌙 Jadwal Imsakiyah Ramadhan</h1>
+<p>Pilih kota untuk melihat jadwal sholat dan imsak</p>
+</header>
+
+<main>
+
+<section class="controls">
+<label for="city">Pilih Kota:</label>
+
+<select id="city">
+<option value="1301">Jakarta</option>
+<option value="1219">Bandung</option>
+<option value="1636">Surabaya</option>
+</select>
+</section>
+
+<section id="status">
+<p id="loading">Memuat data...</p>
+<p id="error"></p>
+</section>
+
+<section class="table-container">
+
+<table id="imsakTable">
+<thead>
+<tr>
+<th>Tanggal</th>
+<th>Imsak</th>
+<th>Subuh</th>
+<th>Dzuhur</th>
+<th>Ashar</th>
+<th>Maghrib</th>
+<th>Isya</th>
+</tr>
+</thead>
+
+<tbody id="tableBody">
+<!-- Data dari API -->
+</tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<footer>
+<p>© 2026 Ramadhan Web</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
